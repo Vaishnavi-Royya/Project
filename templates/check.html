@@ -1,0 +1,21 @@
+<html>
+   
+    <head>
+        <style>
+            body{
+                background-image: url('https://media.istockphoto.com/id/471352871/photo/blank-brochure.jpg?b=1&s=170667a&w=0&k=20&c=a17K0F63Fggx_7UHuZfbKc1t-Trs86pueDKb22neBec=');
+                background-size: cover;
+                background-position: center;
+                background-color: rgb(134, 190, 190);
+            }
+        </style>
+    </head>
+    <body>
+        {% block body %}
+        <h1>Book is rented but trouble in sending mail to student mail</h1>
+        <h2>Check your internet connection or you may have provided invalid Email</h2>
+        <br/>
+       &nbsp; <a href="{{url_for('adminlogin')}}">back</a>
+        {% endblock %}
+    </body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login button</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"/>
+   <style>
+    body{
+      background-image:url('data:image/jpeg;base64,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');
+      background-size: cover;
+    }
+   </style>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Library<span> Book</span></h1>
+      </header>
+    <div class="bgimg2">
+      <div class="container">
+        <div class="row grid-3">
+          <div class="col-12 text-center mt-4"><br>
+           
+            <!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModal">
+  Update status of a book
+</button>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Update status of a book</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form method="POST" action="{{url_for('choose')}}">
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Select</label>
+          <select class="form-control" id="exampleFormControlSelect1" name="option">
+          <option>Rent A Book</option>
+           <option>Retrieve From Rent</option>
+           <option>Under Replacement</option>
+           <option>Retrieve From Replacement</option>
+          </select>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-success">Ok</button>
+      </div>
+      </form>
+    </div>
+  </div>
+</div><br><br>
+            <a href='{{url_for("status_rent")}}'><button class="btn btn-outline-primary">Book Rental Status</button></a>
+             <!--<button class="admin">Admin</button><br />-->
+            <!-- Button trigger modal -->
+<br><br><button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#staticBackdrop">
+  Update a Book
+</button>
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+      <br><br>  <h5 class="modal-title" id="staticBackdropLabel">Update a Book</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    <form method="POST" action="{{url_for('update1')}}">
+      <div class="modal-body">
+     <div class="form-group">
+      <label for="exampleFormControlSelect1">select</label>
+      <select class="form-control" id="exampleFormControlSelect1" name="id1">
+        {% for i in books %}
+        <option>{{i[0]}} {{i[1]}}</option>
+       
+        {% endfor %}
+      </select>
+    </div>
+          </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary">Ok</button>
+      </div>
+    </form>
+    </div>
+  </div>
+</div><br><br>
+  <!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#exampleModalLong">
+Suggestions
+</button>
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Suggestions</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <a href="{{url_for('clear')}}"><button class="btn btn-warning mb-2" style="margin-top: 9px;">Clear Suggestions</button></a>
+        <a href="{{url_for('viewsuggestions')}}"><button class="btn btn-warning">View Suggestions</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+         <br><br> <a href="{{url_for('view')}}"> <button class="btn btn-outline-primary">All books info</button></a>
+         <br><br> <a href="{{url_for('addbook')}}"><button class="btn btn-outline-secondary">Add a book</button></a>
+         <!-- imary one" data-toggle="modal" data-target="#exampleModalLong">
+  Delete a Book
+</button>
+
+
+
+
+
+
+
+
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Delete a book</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    <form method="POST" action="{{url_for('delete')}}">
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">select</label>
+          <select class="form-control" id="exampleFormControlSelect1" name="option">
+            {% for i in books %}
+            <option>{{i[0]}} {{i[1]}}</option>
+            {% endfor %}
+          </select>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary">Ok</button>
+      </div>
+    </form>
+    </div>
+  </div>
+</div><br/>-->
+          <!-- Button trigger modal -->
+<br><br><button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalCenter">
+ Delete A Book
+</button><br><br>
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Delete A Book</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form method="POST" action="{{url_for('delete')}}">
+      <div class="modal-body">
+        <select class="form-group" name="option">
+          {% for i in books %}
+          <option>{{i[0]}} {{i[1]}}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-success" type="submit">submit</button>
+      </div>
+    </form>
+    </div>
+  </div>
+</div><br/><br>
+         
+            <a href="{{url_for('home')}}"><button class="btn btn-outline-info">Log out</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+

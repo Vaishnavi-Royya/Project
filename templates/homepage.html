@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+ {% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for message in messages %}
+    <center><h3 style="color:black;padding-top: 5px;"><b>{{message}}</b></h3></center>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+<style>
+  *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  }
+  body{
+    background-image:url('https://s26162.pcdn.co/wp-content/uploads/sites/2/2022/05/Book.jpg');
+    background-size:cover;
+  }
+  .content{
+    color:#625169;
+    font-size:30px;
+  }
+  .nav-items{
+    width:85%;
+    margin:auto;
+    padding:35px 0;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+  }
+  .nav-items ul li{
+    list-style: none;
+    display:inline-block;
+    margin: 0 20px;
+    position:relative;
+  }
+  .nav-items ul li a{
+    text-decoration:none;
+    color:#b99b63;
+    text-transform:uppercase;
+  }
+  .nav-items ul li::after{
+    content:'';
+    height:3px;
+    width:0%;
+    background:#639c6b;
+    position:absolute;
+    left:0;
+    bottom:0;
+    transition:0.5s;
+  }
+  .nav-items ul li:hover::after{
+    width:100%;
+  }
+</style>
+
+
+<body>
+    <form method="POST">
+  <header class="header">
+    <nav class="nav-items">
+      <ul>
+        <li><a href="{{url_for('payments')}}">PAY FINE</a></li>
+        <li><a href="{{url_for('view1')}}">BOOKS</a></li>
+        <li><a href="{{url_for('suggestions')}}">SUGGESTIONS</a></li>
+       </ul>
+    </nav>
+  </header>
+  <main>
+    <center><div class="content">
+        <h2>Library</h2><br>
+        <p> Helps in referin' n findin' a better path!</p>
+      </div></center>
+
+    </div>
+  </main>
+</form>
+</body>
+
+
+</html>
+
+
+
